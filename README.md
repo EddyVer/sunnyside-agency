@@ -8,3 +8,6 @@ i love :pizza:
 # Les joies de github 
 # Les Joies de githug
 # Les joies de github
+ __les premières idée-- 
+**la deuxiéme idée**
+__*la troisiéme idée*__
