@@ -5,7 +5,8 @@ $colorcaractblack:black;
 }
 .imgSize{
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
 }
 .textCenter{
  text-align: center;
@@ -20,7 +21,10 @@ $colorcaractblack:black;
     padding: 10px;
     background-color: white;
     border-radius: 20px;
-   
+    &:hover{
+        background-color: $colorcaractblack;
+    }
+
 }
 .textButton{
     font-family:'Courier New', Courier, monospace;
@@ -33,4 +37,13 @@ $colorcaractblack:black;
     color: $colorcaractblack;
     font-size: large;
     font-weight:bold ;
+  
+   
+}
+.textTitle{
+    font-family: 'Fraunces 9pt soft';
+    font-weight:900 ;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
 }
