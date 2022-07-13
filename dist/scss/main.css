@@ -15,24 +15,67 @@
   font-size: small;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 33.5% 33% 33.5%;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.imageFont {
-  grid-area: 1/1/4/4;
+.boxButton {
+  width: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
 }
 
+.textButton {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.textButtonBox {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+.flexButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexButton a {
+  text-decoration: none;
+}
+.flexButton a:hover {
+  color: lightgrey;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-image: url("file:///home/melonde-zeus/accets/imagesunnyprojet/orangesun.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-area: "logo logo button" "title title title" "uparrow uparrow uparrow" "bottomarrow bottomarrow bottomarrow";
+  }
+  .header .headerItem {
+    border: 3px solid sandybrown;
+  }
+}
 .title {
   color: white;
-  grid-area: 1/2/2/3;
-  align-self: flex-end;
+  grid-area: title;
+  grid-area: 2/2/3/3;
+  align-self: flex-start;
   justify-self: center;
 }
 
 .logoHeader {
   margin: 33px;
+  grid-area: logo;
   grid-area: 1/1/2/2;
   align-self: flex-start;
   justify-self: flex-start;
@@ -40,19 +83,21 @@
 
 .button {
   margin: 33px;
+  grid-area: button;
   grid-area: 1/3/2/4;
   align-self: flex-start;
-  justify-self: center;
 }
 
 .uparrow {
-  grid-area: 2/2/3/3;
+  grid-area: uparrow;
+  grid-area: 3/2/4/3;
   align-self: flex-end;
   justify-self: center;
 }
 
 .bottomarrow {
-  grid-area: 2/2/3/3;
+  grid-area: bottomarrow;
+  grid-area: 3/2/4/3;
   align-self: flex-end;
   justify-self: center;
 }

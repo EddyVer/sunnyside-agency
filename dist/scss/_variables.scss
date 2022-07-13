@@ -1,4 +1,5 @@
 $colorcaract:white;
+$colorcaractblack:black;
 *{
     margin: 0;
 }
@@ -11,4 +12,25 @@ $colorcaract:white;
 }
 .sizeText{
     font-size: small;
+}
+.boxButton{
+    width:100px;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+.textButton{
+    font-family:'Courier New', Courier, monospace;
+    color: $colorcaract;
+    font-size: large;
+    font-weight:bold ;
+}
+.textButtonBox{
+    font-family:'Courier New', Courier, monospace;
+    color: $colorcaractblack;
+    font-size: large;
+    font-weight:bold ;
 }
