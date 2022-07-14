@@ -24,7 +24,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
     #{&}Item{}
 }
-
+.nav{display: none;}
 .title{
     color: $colorcaract;
     grid-area: title;
@@ -88,53 +88,76 @@
     align-self: flex-start;
      margin-left: 50px;
 }
-.itemContent1{
+.textTransform{
     grid-area: 1/1/2/2;
 }
-.itemContent2{
+.imgEgg{
     grid-area: 1/2/2/3;
 }
-.itemContent3{
+.imgRedGlass{
     grid-area: 2/1/3/2;
 }
-.itemContent4{
+.textStand{
     grid-area: 2/2/3/3;
 }
-.itemContent5{
+.imgCherry{
    grid-area: 3/1/4/2; 
 }
-.itemContent6{
+.imgOrange{
     grid-area: 3/2/4/3;
 }
-.itemContent7{
+.textGraphic{
     grid-area: 3/1/4/2;
     align-self: flex-end;
     justify-self: center;
     margin: 30px;
 }
-.itemContent8{
+.textPhotgr{
     grid-area: 3/2/4/3;
     align-self: flex-end;
     justify-self: center;
     margin: 30px;
 }
-@media only screen and (max-width:600px){
-    .header{
-         
-    }
-    .button{
 
+.team{
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-rows: 20% 80%;
+    #{&}itemT{
+        border: 4px solid salmon;
     }
+}
+.titleTeam{
+    grid-area: 1/1/2/4;
+}
+.emilyTeam{
+    grid-area: 2/1/3/3;
+}
+.ThomasTeam{
+    grid-area: 2/2/3/3;
+}
+.jennieTeam{
+    grid-area: 2/3/3/4;
+}
+@media only screen and (max-width:600px){
+    
+    .header .button{display: none;} 
+    .header .nav{display: block;}
+    .nav{
+        margin-top:20px ;
+        grid-area: 1/5/2/6 ;}
+    
+    
     .content{
         grid-template-columns: 100%;
         grid-template-rows:0.6fr 1.4fr 0.6fr 1.4fr 1.5fr 1.5fr ;
     }
-    .itemContent1{grid-area: 2/1/3/2;}
-    .itemContent2{grid-area: 1/1/2/2;}
-    .itemContent3{grid-area: 3/1/4/2;}
-    .itemContent4{grid-area: 4/1/5/2;}
-    .itemContent5{grid-area: 5/1/6/2;}
-    .itemContent6{grid-area: 6/1/7/2;}
-    .itemContent7{grid-area: 5/1/6/2;}
-    .itemContent8{grid-area: 6/1/7/2;}
+    .textTransform{grid-area: 2/1/3/2;}
+    .imgEgg{grid-area: 1/1/2/2;}
+    .imgRedGlass{grid-area: 3/1/4/2;}
+    .textStand{grid-area: 4/1/5/2;}
+    .imgCherry{grid-area: 5/1/6/2;}
+    .imgOrange{grid-area: 6/1/7/2;}
+    .textGraphic{grid-area: 5/1/6/2;}
+    .textPhotgr{grid-area: 6/1/7/2;}
 }
