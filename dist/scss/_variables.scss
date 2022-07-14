@@ -1,0 +1,54 @@
+$colorcaract:white;
+$colorcaractblack:black;
+*{
+    margin: 0;
+}
+.imgNav{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+.imgSize{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.textCenter{
+ text-align: center;
+}
+.sizeText{
+    font-size: small;
+}
+.boxButton{
+    width:100px;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    &:hover{
+        background-color: $colorcaractblack;
+    }
+
+}
+.textButton{
+    font-family:'Courier New', Courier, monospace;
+    color: $colorcaract;
+    font-size: large;
+    font-weight:bold ;
+}
+.textButtonBox{
+    font-family:'Courier New', Courier, monospace;
+    color: $colorcaractblack;
+    font-size: large;
+    font-weight:bold ;
+  
+   
+}
+.textTitle{
+    font-family: 'Fraunces 9pt soft';
+    font-weight:900 ;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+}
